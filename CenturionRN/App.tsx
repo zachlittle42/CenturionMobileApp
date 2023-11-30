@@ -5,10 +5,11 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 
 // Import your custom screens for each tab
-import GoalScreen from './screens/GoalScreen'; // You need to create this
-import InsightsScreen from './screens/InsightsScreen'; // You need to create this
-import TodayScreen from './screens/TodayScreen'; // You need to create this
-import ProfileScreen from './screens/ProfileScreen'; // You need to create this
+import GoalScreen from './screens/GoalScreen'; 
+import InsightsScreen from './screens/InsightsScreen'; 
+import TodayScreen from './screens/TodayScreen'; 
+import ExploreScreen from './screens/ExploreScreen'; 
+import ProfileScreen from './screens/ProfileScreen'; 
 
 
 
@@ -22,6 +23,7 @@ function MyTabs() {
       <Tab.Screen name="Goal" component={GoalScreen} />
       <Tab.Screen name="Insights" component={InsightsScreen} />
       <Tab.Screen name="Today" component={TodayScreen} />
+      <Tab.Screen name="Explore" component={ExploreScreen} />
       <Tab.Screen name="Profile" component={ProfileScreen} />
     </Tab.Navigator>
   );
